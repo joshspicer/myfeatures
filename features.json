@@ -6,8 +6,8 @@
             "options": {
                 "greeting": {
                     "type": "string",
-                    "proposals": ["hey", "hello", "hi", "howdy" ],
-                    "default": "hey",
+                    "proposals": ["hey1", "hello1", "hi1", "howdy1" ],
+                    "default": "hey1",
                     "description": "Select a pre-made greeting, or enter your own"
                 }
             },
