@@ -7,7 +7,7 @@ set -e
 # any build-time arguments into a feature-set scoped "features.env"
 # The author is free to source that file and use it however they would like.
 set -a
-. ./features.env
+. ./devcontainer-features.env
 set +a
 
 # Build args are exposed to this entire feature set following the pattern:  _BUILD_ARG_<FEATURE ID>_<OPTION NAME>
