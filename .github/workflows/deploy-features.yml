@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
           
       - name: Devcontainer features
-        uses: microsoft/publish-dev-container-features-action@main
+        uses: joshspicer/publish-dev-container-features-action@main
         with:
           path-to-features: '.'
           
@@ -20,5 +20,5 @@ jobs:
         with:
           allowUpdates: true # Lets us upload our own artifact from previous step
           artifactErrorsFailBuild: true
-          artifacts: './devcontainer-features.tgz'
+          artifacts: './devcontainer-*.tgz'
           token: ${{ secrets.GITHUB_TOKEN }}
